@@ -17,6 +17,7 @@ body {
 }
 .header {
     position: fixed;
+    padding: 10px 0;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -45,12 +46,11 @@ body {
     color: #00d9ff;
 }
 .logo img{
-    width: 70px;
-    height: auto;
-    display: block;
+    width: 55px !important;
+    height: 55px !important;
+    object-fit: contain;
+    display:block;
 }
-
-.main-banner {
   .main-banner{
     min-height:100vh;
 
