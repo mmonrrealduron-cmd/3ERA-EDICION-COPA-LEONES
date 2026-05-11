@@ -3,113 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3ERA COPA LEONES</title>
+    <title>Registro | 3ERA COPA LEONES</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
-        <div class="container nav-container">
-          <div class="logo">
-    <img class="logo-navbar" src="assets/img/logo.png" alt="Logo">
-</div>
-            
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-             <div class="menu-toggle" id="menu-toggle">
-                ☰
-            </div>
-        </div>
-    </header>
+    <div class="overlay"></div>
 
-    <section class="main-banner" id="inicio">
-        <div class="container banner-content">
-            <img src="assets/img/logo.png" alt="Logo 3ERA COPA LEONES" class="banner-logo">
-
+    <main class="container">
+          <div class="logo-area">
+            <img src="assets/img/logo.png" alt="Logo">
             <h1>3ERA COPA LEONES</h1>
-
-            <p>
-                Vive la pasión, la emoción y la intensidad del torneo más esperado.
-                Fuerza, orgullo y gloria en cada partido.
-            </p>
-          
-             <a href="#contacto" class="btn-primary">Más Información</a>
+            <p>Registro Oficial del Torneo de Taekwondo</p>
         </div>
-    </section>
 
-    <section class="about section" id="nosotros">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>
-                Somos un equipo enfocado en crear soluciones web modernas,
-                elegantes y optimizadas.
-            </p>
-        </div>
-    </section>
+        <form id="registroForm" class="registro-form">
 
-    <section class="services section" id="servicios">
-        <div class="container">
-            <h2>Servicios</h2>
-           <div class="cards">
-                <div class="card">
-                    <h3>Diseño Web</h3>
-                    <p>Sitios modernos y responsivos.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Marketing</h3>
-                    <p>Estrategias digitales para crecer.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Soporte</h3>
-                    <p>Asistencia técnica y mantenimiento.</p>
-                </div>
+            <div class="input-group">
+                <label>Nombre del Atleta</label>
+                <input type="text" name="atleta" required>
             </div>
-        </div>
-    </section>
-  <section class="gallery section" id="galeria">
-        <div class="container">
-            <h2>Galería</h2>
 
-            <div class="gallery-grid">
-                <img src="assets/img/gallery/1.jpg" alt="">
-                <img src="assets/img/gallery/2.jpg" alt="">
-                <img src="assets/img/gallery/3.jpg" alt="">
-                <img src="assets/img/gallery/4.jpg" alt="">
+            <div class="input-group">
+                <label>Nombre del Dojang</label>
+                <input type="text" name="dojang" required>
             </div>
-        </div>
-    </section>
+             <div class="input-group">
+                <label>Nombre del Entrenador</label>
+                <input type="text" name="entrenador" required>
+            </div>
 
-    <section class="contact section" id="contacto">
-        <div class="container">
-            <h2>Contacto</h2> 
-             <form>
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo">
-                <textarea placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
+            <div class="input-group">
+                <label>Edad</label>
+                <input type="number" name="edad" required>
+            </div>
 
-    <footer>
-        <p>© 2026 3ERA COPA LEONES</p>
-    </footer>
+            <div class="input-group">
+                <label>Grado / Cinta</label>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/slider.js"></script>
+                <select name="cinta" required>
+                    <option value="">Selecciona una cinta</option>
+                    <option value="Blanca">⬜ Blanca</option>
+                    <option value="Amarilla">🟨 Amarilla</option>
+                    <option value="Verde">🟩 Verde</option>
+                    <option value="Azul">🟦 Azul</option>
+                    <option value="Roja">🟥 Roja</option>
+                    <option value="Negra">⬛ Negra</option>
+                </select>
+            </div>
+
+            <div class="modalidades">
+                <label>Modalidades</label>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="Combate"> Combate</label>
+
+                    <label><input type="checkbox" value="Formas"> Formas</label>
+
+                    <label><input type="checkbox" value="Circuito"> Circuito</label>
+
+                    <label><input type="checkbox" value="Sin contacto a la cabeza"> Sin contacto a la cabeza</label>
+                </div>
+                  </div>
+
+            <div class="input-group">
+                <label>Varias Modalidades</label>
+                <textarea name="extraModalidades" placeholder="Escribe otras modalidades..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>WhatsApp</label>
+                <input type="text" name="whatsapp" placeholder="Ejemplo: 8711234567" required>
+            </div>
+
+            <button type="submit" class="btn-registro">
+                REGISTRAR ATLETA
+            </button>
+               </form>
+
+        <div id="mensaje"></div>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
