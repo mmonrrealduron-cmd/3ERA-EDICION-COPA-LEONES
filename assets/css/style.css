@@ -23,12 +23,12 @@ body {
     background: rgba(0,0,0,0.8);
     backdrop-filter: blur(10px);
 }
-
 .nav-container{
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
+
 .navbar ul {
     display: flex;
     gap: 20px;
@@ -45,7 +45,7 @@ body {
     color: #00d9ff;
 }
 .logo img{
-    width: 90px;
+    width: 70px;
     height: auto;
     display: block;
 }
