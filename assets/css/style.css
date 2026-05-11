@@ -160,3 +160,18 @@ footer {
     padding: 30px;
     background: black;
 }
+
+.logo-navbar{
+    width:60px !important;
+    max-width:60px !important;
+    min-width:60px !important;
+
+    height:auto !important;
+
+    display:block;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
