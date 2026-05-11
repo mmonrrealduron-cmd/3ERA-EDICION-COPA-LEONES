@@ -52,20 +52,17 @@ body {
 }
 
 .main-banner {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 120px 20px 80px;
+  .main-banner{
+    min-height:100vh;
+
     background:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-        url('../img/fondo.png');
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url('../img/fondo.png');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .banner-content {
     max-width: 800px;
     background: rgba(0,0,0,0.45);
