@@ -24,11 +24,10 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 .navbar ul {
     display: flex;
@@ -45,10 +44,10 @@ body {
 .navbar a:hover {
     color: #00d9ff;
 }
-.logo-img {
+.logo img{
     width: 90px;
     height: auto;
-    object-fit: contain;
+    display: block;
 }
 
 .main-banner {
